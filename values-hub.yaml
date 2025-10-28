@@ -45,7 +45,7 @@ clusterGroup:
       argoProject: hub
       path: 6-openshift-gitops/ztp-gitops
       repoURL: https://github.com/ngner/literate-couscous.git
-      targetRevision: validated-patter
+      targetRevision: validated-patterns
     acm:
       name: acm
       namespace: open-cluster-management
