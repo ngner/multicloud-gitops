@@ -39,6 +39,13 @@ clusterGroup:
   #   - '/overrides/values-{{ $.Values.global.hubClusterDomain }}.yaml'
   #   - '/overrides/values-{{ $.Values.global.localClusterDomain }}.yaml'
   applications:
+    ztp-gitops-root:
+      name: ztp-gitops-root
+      namespace: openshift-gitops
+      argoProject: hub
+      path: 6-openshift-gitops/ztp-gitops
+      repoURL: https://github.com/ngner/literate-couscous.git
+      targetRevision: validated-patter
     acm:
       name: acm
       namespace: open-cluster-management
